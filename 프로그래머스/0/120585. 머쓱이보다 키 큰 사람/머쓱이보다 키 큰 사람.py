@@ -1,5 +1,11 @@
 def solution(array, height):
+    # result = 0
+    # for x in array:
+    #     if x > height:
+    #         result += 1
+    
     result = 0
+    array.sort()
     for x in array:
         if x > height:
             result += 1
