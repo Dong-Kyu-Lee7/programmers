@@ -1,6 +1,6 @@
 def solution(my_string, letter):
     result = ''
-    for x in my_string:
-        if x != letter:
-            result += x
+    for i in my_string:
+        if i != letter:
+            result += i
     return result
