@@ -1,5 +1,5 @@
 def solution(n):
     result = 0
-    for x in str(n):
-        result += int(x)
+    for i in str(n):
+        result += int(i)
     return result
