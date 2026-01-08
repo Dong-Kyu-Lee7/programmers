@@ -1,5 +1,5 @@
-a = int(input())
-if (a % 2) == 0:
-    print(f"{a} is even")
+n = int(input())
+if (n % 2) == 0:
+    print(f"{n} is even")
 else:
-    print(f"{a} is odd")
+    print(f"{n} is odd")
