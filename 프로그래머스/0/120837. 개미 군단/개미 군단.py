@@ -1,7 +1,8 @@
 def solution(hp):
-    a_num = hp // 5
-    b_num = (hp % 5) // 3
-    c_num = ((hp % 5) % 3) // 1
+    g,s,w = 5,3,1
+    g_num = hp // g
+    s_num = (hp % g) // s
+    w_num = ((hp % g) % s) // w
 
-    result = a_num+b_num+c_num
+    result = g_num + s_num + w_num
     return result
