@@ -1,12 +1,12 @@
 def solution(num_list):
-    answer = 0
+    # answer = 0
     odd_num = ''
     even_num = ''
-    for i in num_list:
-        if i % 2 == 1: # odd
-            odd_num += str(i)
+    for x in num_list:
+        if x % 2 == 1: # odd
+            odd_num += str(x)
         else:
-            even_num += str(i)
+            even_num += str(x)
     
-    answer = int(odd_num) + int(even_num)
-    return answer
+    result = int(odd_num) + int(even_num)
+    return result
