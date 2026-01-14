@@ -1,5 +1,5 @@
 def solution(myString):
-    result = ''
+    # result = ''
     
     result = myString.upper()
     return result
