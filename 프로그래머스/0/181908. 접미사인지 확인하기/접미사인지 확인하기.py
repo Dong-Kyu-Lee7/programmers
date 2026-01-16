@@ -1,10 +1,10 @@
 def solution(my_string, is_suffix):
-    result = []
+    check_list = []
 
     for x in range(len(my_string)):
-        result.append(my_string[x:])
-        if is_suffix in result:
-            answer = 1
+        check_list.append(my_string[x:])
+        if is_suffix in check_list:
+            result = 1
         else:
-            answer = 0
-    return answer
+            result = 0
+    return result
