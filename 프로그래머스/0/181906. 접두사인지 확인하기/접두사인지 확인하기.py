@@ -1,9 +1,10 @@
 def solution(my_string, is_prefix):
-    result = []
+    list_string = []
+    
+    result = 0
     for x in range(len(my_string)):
-        result.append(my_string[:x])
-        if is_prefix in result:
-            answer = 1
-        else:
-            answer = 0
-    return answer
+        list_string.append(my_string[:x+1])
+        if is_prefix in list_string:
+            result = 1
+    
+    return result
