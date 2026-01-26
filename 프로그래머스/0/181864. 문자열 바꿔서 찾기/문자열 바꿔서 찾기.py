@@ -4,6 +4,6 @@ def solution(myString, pat):
 
     if pat in cond:
         result = 1
-    else:
-        result = 0
+    # else:
+    #     result = 0
     return result
