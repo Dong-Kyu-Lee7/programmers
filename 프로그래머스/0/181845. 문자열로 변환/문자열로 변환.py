@@ -1,4 +1,4 @@
 def solution(n):
-    result = ''
+    # result = ''
     result = str(n)
     return result
