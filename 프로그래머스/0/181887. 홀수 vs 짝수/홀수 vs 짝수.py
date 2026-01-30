@@ -7,9 +7,10 @@ def solution(num_list):
             odd_num += num_list[x]
         else:
             even_num += num_list[x] # num_list[x+1] -> 2,1,6
-
+    
+    result = even_num
     if odd_num > even_num:
         result = odd_num
-    else:
-        result = even_num
+    # else:
+    #     result = even_num
     return result
