@@ -1,4 +1,4 @@
 def solution(myString):
-    result = ''
+    # result = ''
     result = myString.lower()
     return result
