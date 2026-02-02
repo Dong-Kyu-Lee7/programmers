@@ -1,3 +1,9 @@
 def solution(arr, intervals):
-    result = arr[intervals[0][0]:intervals[0][1]+1] + arr[intervals[1][0]:intervals[1][1]+1]
-    return result
+#     result = arr[intervals[0][0]:intervals[0][1]+1] + arr[intervals[1][0]:intervals[1][1]+1]
+    
+#     return result
+
+    fir_arr = arr[intervals[0][0]:intervals[0][1]+1]
+    sec_arr = arr[intervals[1][0]:intervals[1][1]+1]
+    
+    return fir_arr + sec_arr
