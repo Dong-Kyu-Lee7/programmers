@@ -4,6 +4,7 @@ def solution(numbers, n):
     for x in numbers:
         result += x
         if result > n:
-            return result
+            # return result
+            break
         
     return result
