@@ -1,5 +1,5 @@
 -- 코드를 입력하세요
-SELECT count(user_id) users
+SELECT count(user_id) USERS
 # select *
 from user_info
 where age is null
