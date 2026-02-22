@@ -6,4 +6,4 @@ join author a
 on b.AUTHOR_ID = a.AUTHOR_ID
 where b.category = '경제'
 # group by b.category
-order by b.PUBLISHED_DATE
+order by b.PUBLISHED_DATE asc
