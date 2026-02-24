@@ -5,4 +5,4 @@ from FIRST_HALF h
 join ICECREAM_INFO i
 on h.flavor = i.flavor
 group by i.ingredient_type
-order by total_order
+order by total_order asc
