@@ -8,4 +8,4 @@ SELECT ORDER_ID, PRODUCT_ID, substr(OUT_DATE,1,10) OUT_DATE,
 from food_order
 # where substr(out_date,1,10) = '2022-05-01'
 
-order by order_id
+order by order_id asc
