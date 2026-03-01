@@ -4,5 +4,6 @@ select i.ANIMAL_ID, i.name
 from ANIMAL_INS i
 join ANIMAL_OUTS o
 on i.ANIMAL_ID = o.ANIMAL_ID
-order by timestampdiff(day, i.DATETIME, o.DATETIME) desc
+# order by timestampdiff(day, i.DATETIME, o.DATETIME) desc
+order by (o.datetime - i.datetime) desc
 limit 2
