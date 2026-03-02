@@ -2,4 +2,4 @@
 # select *
 select count(FISH_TYPE) FISH_COUNT
 from fish_info
-where length is null
+where length is null or length <= 10
