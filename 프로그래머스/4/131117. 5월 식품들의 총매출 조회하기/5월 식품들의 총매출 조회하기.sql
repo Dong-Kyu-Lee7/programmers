@@ -5,4 +5,4 @@ join FOOD_ORDER o
 on p.PRODUCT_ID = o.PRODUCT_ID
 where year(o.PRODUCE_DATE) = 2022 and month(o.PRODUCE_DATE) = 5
 group by p.product_id
-order by TOTAL_SALES desc, p.product_id
+order by TOTAL_SALES desc, p.product_id asc
