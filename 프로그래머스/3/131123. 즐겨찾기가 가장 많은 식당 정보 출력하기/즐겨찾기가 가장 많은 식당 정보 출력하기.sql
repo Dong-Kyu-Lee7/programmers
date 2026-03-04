@@ -4,7 +4,7 @@ from rest_info
 where FAVORITES in (
     select max(FAVORITES)
     from rest_info
-    group by food_type
+    group by FOOD_TYPE
 )
 group by FOOD_TYPE
 order by FOOD_TYPE desc
