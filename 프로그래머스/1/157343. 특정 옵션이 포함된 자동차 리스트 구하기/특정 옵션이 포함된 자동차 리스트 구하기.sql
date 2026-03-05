@@ -1,5 +1,6 @@
 -- 코드를 입력하세요
-SELECT *
+# SELECT *
+select CAR_ID, CAR_TYPE, DAILY_FEE, OPTIONS
 from CAR_RENTAL_COMPANY_CAR
 where instr(OPTIONS, '네비게이션')
 order by car_id desc
