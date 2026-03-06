@@ -3,5 +3,5 @@
 select count(id) fish_count, month(time) month
 from fish_info
 # where length is not null
-group by month
-order by month(time)
+group by month(time)
+order by month(time) asc
