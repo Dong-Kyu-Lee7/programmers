@@ -4,4 +4,4 @@ from ITEM_INFO i
 join ITEM_TREE t
 on i.ITEM_ID = t.ITEM_ID
 where t.PARENT_ITEM_ID is null
-order by t.ITEM_ID
+order by t.ITEM_ID asc
