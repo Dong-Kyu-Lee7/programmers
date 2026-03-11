@@ -1,6 +1,6 @@
 -- 코드를 입력하세요
 # select *,
-SELECT BOARD_ID, WRITER_ID, TITLE, PRICE,
+SELECT BOARD_ID, WRITER_ID, TITLE, price,
     case
         when status = 'sale' then '판매중'
         when status = 'reserved' then '예약중'
