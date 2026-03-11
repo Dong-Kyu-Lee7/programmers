@@ -6,4 +6,4 @@ select id,
         when SIZE_OF_COLONY > 1000 then 'HIGH'
     end size
 from ECOLI_DATA
-order by id 
+order by id asc
