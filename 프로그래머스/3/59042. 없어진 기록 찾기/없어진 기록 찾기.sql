@@ -4,4 +4,4 @@ from ANIMAL_OUTS o
 left join ANIMAL_INS i
 on o.ANIMAL_ID = i.ANIMAL_ID
 where i.ANIMAL_ID is null
-order by o.ANIMAL_ID
+order by o.ANIMAL_ID asc
