@@ -9,4 +9,4 @@ SELECT car_id,
     end AVAILABILITY
 from CAR_RENTAL_COMPANY_RENTAL_HISTORY
 group by car_id
-order by car_id desc
+order by car_id DESC
