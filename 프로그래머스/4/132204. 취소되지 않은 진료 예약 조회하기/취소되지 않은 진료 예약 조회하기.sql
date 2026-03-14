@@ -6,4 +6,4 @@ on a.pt_no = p.pt_no
 join doctor d
 on a.MDDR_ID = d.DR_ID
 where a.APNT_YMD like '2022-04-13%' and a.APNT_CNCL_YN = 'n' and a.MCDP_CD ='cs'
-order by a.APNT_YMD
+order by a.APNT_YMD asc
