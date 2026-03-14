@@ -4,5 +4,5 @@ from HR_EMPLOYEES e
 join HR_GRADE g
 on e.emp_no = g.emp_no
 group by g.emp_no
-order by score desc
+order by score DESC
 limit 1
