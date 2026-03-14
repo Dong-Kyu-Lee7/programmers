@@ -2,6 +2,7 @@
 # select *
 select count(i.id) fish_count
 from fish_info i
-join fish_name_info n
-on i.fish_type = n.fish_type
-where n.fish_name in ('bass','snapper')
+join fish_name_info ni
+on i.fish_type = ni.fish_type
+where ni.fish_name in ('bass','snapper')
+order by fish_count
