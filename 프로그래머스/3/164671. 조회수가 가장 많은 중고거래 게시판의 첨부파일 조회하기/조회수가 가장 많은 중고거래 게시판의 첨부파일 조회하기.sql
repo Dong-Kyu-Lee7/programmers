@@ -1,7 +1,7 @@
 -- 코드를 입력하세요
 SELECT concat('/home/grep/src/', f.BOARD_ID, '/', f.FILE_ID, f.FILE_NAME, f.FILE_EXT) FILE_PATH
 from USED_GOODS_BOARD b
-left join USED_GOODS_FILE f
+join USED_GOODS_FILE f
 on b.BOARD_ID = f.BOARD_ID
 where views = (
     select max(views)
@@ -9,3 +9,8 @@ where views = (
     )
 order by f.FILE_ID desc
 # limit 1
+
+# SELECT *
+# from USED_GOODS_BOARD b
+# join USED_GOODS_FILE f
+# on b.BOARD_ID = f.BOARD_ID
