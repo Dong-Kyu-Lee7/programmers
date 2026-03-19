@@ -5,4 +5,4 @@ join ONLINE_SALE o
 on u.user_id = o.user_id
 where u.gender is not null
 group by year(o.sales_Date), month(o.sales_Date), u.gender
-order by year(o.sales_Date), month(o.sales_Date), u.gender
+order by year(o.sales_Date) asc, month(o.sales_Date) asc, u.gender asc
