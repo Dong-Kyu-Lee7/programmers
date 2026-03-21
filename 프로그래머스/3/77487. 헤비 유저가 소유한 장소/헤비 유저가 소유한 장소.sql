@@ -7,4 +7,4 @@ where host_id in (
     group by host_id
     having count(host_id) >= 2
 )
-order by id
+order by id asc
