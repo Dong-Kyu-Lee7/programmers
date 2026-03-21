@@ -1,7 +1,8 @@
 -- 코드를 입력하세요
-SELECT month(start_date) month, CAR_ID, count(*) records
+SELECT month(start_date) month, CAR_ID, count(CAR_ID) records
 from CAR_RENTAL_COMPANY_RENTAL_HISTORY 
-where month(start_date) between 8 and 10
+# where month(start_date) between 8 and 10
+where start_date >= '2022-08-1' and start_date < '2022-11-01'
     and (car_id in (
             select car_id
             from CAR_RENTAL_COMPANY_RENTAL_HISTORY
