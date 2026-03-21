@@ -2,7 +2,7 @@
 SELECT fh.FLAVOR
 from FIRST_HALF fh
 join (
-    select flavor, sum(TOTAL_ORDER) TOTAL_ORDER
+    select FLAVOR, sum(TOTAL_ORDER) TOTAL_ORDER
     from july
     group by flavor
 ) j
