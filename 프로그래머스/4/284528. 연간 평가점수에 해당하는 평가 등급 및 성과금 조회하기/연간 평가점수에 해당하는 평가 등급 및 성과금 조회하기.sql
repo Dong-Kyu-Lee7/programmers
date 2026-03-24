@@ -17,4 +17,4 @@ from HR_EMPLOYEES e
 join HR_GRADE g
 on e.emp_no = g.emp_no
 group by e.emp_no
-order by e.emp_no
+order by e.emp_no asc
