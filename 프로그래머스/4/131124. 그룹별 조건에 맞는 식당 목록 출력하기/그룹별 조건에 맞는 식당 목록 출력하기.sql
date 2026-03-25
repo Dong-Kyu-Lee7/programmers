@@ -10,4 +10,4 @@ where p.MEMBER_ID = (
     order by count(MEMBER_ID) desc
     limit 1
     )
-order by r.REVIEW_DATE, r.REVIEW_TEXT
+order by r.REVIEW_DATE asc, r.REVIEW_TEXT
