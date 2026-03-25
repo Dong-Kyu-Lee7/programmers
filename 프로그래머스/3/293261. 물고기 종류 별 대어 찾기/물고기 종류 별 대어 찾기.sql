@@ -7,4 +7,4 @@ where (i.fish_type, i.length) in (
     select fish_type, max(length)
     from FISH_INFO 
     group by fish_type)
-order by i.id
+order by i.id asc
