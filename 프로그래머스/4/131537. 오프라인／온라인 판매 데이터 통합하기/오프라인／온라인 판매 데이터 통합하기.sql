@@ -1,7 +1,8 @@
 -- 코드를 입력하세요
 SELECT substr(sales_date,1,10) SALES_DATE, PRODUCT_ID, USER_ID, SALES_AMOUNT
 from ONLINE_SALE
-where substr(sales_date,1,7) = '2022-03'
+# where substr(sales_date,1,7) = '2022-03'
+where substr(sales_date,1,7) >= '2022-03' and substr(sales_date,1,7) < '2022-04'
 
 union
 
