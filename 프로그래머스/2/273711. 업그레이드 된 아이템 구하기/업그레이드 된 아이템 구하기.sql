@@ -6,6 +6,6 @@ on i.ITEM_ID = t.ITEM_ID
 where t.PARENT_ITEM_ID in (
     select item_id
     from item_info
-    where rarity = 'rare'
+    where rarity = 'RARE'
 )
 order by i.item_id desc
